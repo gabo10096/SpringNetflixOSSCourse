@@ -20,7 +20,10 @@ zuul:
   routes:
     project:
       path: /catalogos/**
-      url: http://localhost:8090
+      serviceId: catalogos-service
+    curso:
+      path: /curso/**
+      serviceId: curso-service
   ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
 
 ribbon:
